@@ -9,22 +9,8 @@
 * {
   font-family: exo , sans-serif;
   font-optical-sizing: auto;
+  margin: 0;
+  box-sizing: border-box;
 
 }
 
-.light-theme {
-  --background-primary: #f8d9e8;
-  --background-secondray: #ab6c74;
-  --background-tertiary: #b1acae;
-
-  --button-disable: #797476;
-  --button-action: #fa695e;
-}
-
-:root {
-  --fs-base: 0.85rem;
-  --fs-1: 1.87rem;
-  --fs-2: 1.5rem;
-  --fs-3: 1.23rem;
-  --fs-4: 0.75rem;
-}
