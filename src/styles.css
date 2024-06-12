@@ -13,4 +13,20 @@
   box-sizing: border-box;
 
 }
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
 
+:root {
+  --background-primary: #f8d9e8;
+  --background-secondray: #ab6c74;
+  --background-tertiary: #b1acae;
+
+  --button-disable: #797476;
+  --button-action: #702823;
+
+
+}
