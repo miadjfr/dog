@@ -10,7 +10,13 @@ export class MainComponent implements OnInit {
     constructor() { }
 
     ngOnInit() {
-      
+
+    }
+
+    menuValue:boolean = false ;
+
+    openMenu(){
+        this.menuValue = !this.menuValue
     }
 
 

@@ -1,10 +1,4 @@
 
-
-main{
- 
-
-}
-
 .section {
   display: grid;
   grid-template-columns: 300px 3.3fr;
@@ -25,7 +19,7 @@ i{
   height: 100vh;
   margin-bottom: 0;
 
-  box-shadow: 0 0 5px ;
+  box-shadow: 0 0 5px  ;
 }
 .left-side .user-name {
   display: grid;
@@ -148,10 +142,120 @@ padding-left: 60px;
     color: #b1acae;
 }
 
+
+
+/* ======== Mobile Version Css ==========*/
+
+.mobile-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 10px 10px 20px;
+    background-color: #ab6c74;
+    box-shadow: 0 0 5px  ;
+    position: fixed;
+    width: 100%;
+}
+
+
+
+
+.mobile-header-logo img{
+    border-radius: 50%;
+    box-shadow: 0 0 3px black;
+
+    width: 50px;
+}
+.mobile-header-logo a{
+    color: #f8d9e8;
+    align-content: end;
+    font-size: 1.1rem;
+    text-shadow: 0 0 3px black;
+    padding-left: 10px;
+    position: absolute;
+    bottom: 20px;
+
+
+}
+.menu-icon{
+    font-size: 20px;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    color: #f8d9e8;
+    text-shadow: 0 0 3px black;
+
+}
+.nav-menu{
+    display: block;
+    position: absolute;
+    background-color: #ab6c74;
+    width: 150px;
+    height: 100vh;
+    box-shadow: 0 0 5px  ;
+    top: 0;
+    right: -150px;
+    transition: all .4s ease-in-out
+
+
+}
+.nav-menu-2{
+    right: 0px !important;
+    transition: all .4s ease-in-out
+
+}
+
+.main-menu{
+    color: #f8d9e8;
+    position: absolute;
+    top: 30px;
+    padding: 0 20px;
+
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-shadow: 0 0 3px black;
+    transition: all .2s ;
+
+}
+.back-icon{
+    font-size: 20px;
+    position: absolute;
+    right: 30px;
+    top: 80px;
+
+    color: #f8d9e8;
+    text-shadow: 0 0 3px black;
+
+}
+
+.nav-item{
+    padding-top: 150px;
+}
+
+.nav-link{
+    color: #f8d9e8;
+    padding: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-shadow: 0 0 3px black;
+    transition: all .2s ;
+
+}
+.log-out{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+
+
+
 @media (max-width: 800px) {
   .section {
     display: grid;
     grid-template-columns: 25% 75%;
+  }
+  .left-side{
+    width: 200px;
   }
   .left-side .user-name {
     display: flex;
@@ -163,7 +267,26 @@ padding-left: 60px;
   }
 }
 
+@media (max-width: 630px){
+    .left-side{
+        width: 150px;
+      }
+
+      .user-name a{
+        font-size: 20px;
+      }
+
+}
+
 @media (max-width : 450px){
     .section{
         display: none;
     }}
+
+
+@media (min-width: 449px){
+    .sectoin-mobile {
+        display: none;
+    }
+
+}

@@ -1,21 +1,42 @@
 <main>
   <!--------Mobile Version ------------------------------------------>
   <div class="sectoin-mobile">
-    <header class="header-mobile">
-        <div class="user-name-mobile">
+    <header class="mobile-header">
+      <div class="mobile-header-logo">
 
-            <img src="../../assets/img/usr.jpg" style="width: 50px;">
-            <a href="#">User-name</a>
+        <img src="../../assets/img/usr.jpg"  />
+        <a href="#">User-Name</a>
+      </div>
+      <div class="mobile-nav-bar">
+        <div class="menu-icon" (click)="openMenu()">
+          <i class="bi bi-three-dots"></i>
         </div>
-        
+        <div class="nav-menu" [class.nav-menu-2]="menuValue">
+            <p class="main-menu">Main Menu</p>
+            <i class="back-icon bi bi-arrow-left" (click)="openMenu()"></i>
+          <ul class="nav-item">
+            <li>
+              <a href="#" class="nav-link"><i class="bi bi-person-lines-fill"></i>  profile</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link"><i class="bi bi-ui-radios"></i>  setting</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link"><i class="bi bi-headset"></i>  support</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link"><i class="bi bi-patch-question"></i> help</a>
+            </li>
 
+            </ul>
+                <div class="log-out">
+
+                    <a href="#" class="nav-link"><i class="bi bi-box-arrow-left"></i>  log out</a>
+                </div>
+        </div>
+      </div>
     </header>
   </div>
-
-
-
-
-
 
   <!--------Desktop Version ------------------------------------------>
   <div class="section">
