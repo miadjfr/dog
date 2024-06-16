@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { LoginComponent } from './login/login.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +15,8 @@ import { LoginComponent } from './login/login.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   providers: [
     provideClientHydration()

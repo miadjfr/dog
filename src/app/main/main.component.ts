@@ -7,17 +7,27 @@ import { Component ,OnInit
   styleUrl: './main.component.css'
 })
 export class MainComponent implements OnInit {
-    constructor() { }
+    constructor() {  }
 
     ngOnInit() {
 
     }
+
 
     menuValue:boolean = false ;
 
     openMenu(){
         this.menuValue = !this.menuValue
     }
+
+    addValue:boolean = true;
+    addForm(){
+        this.addValue = !this.addValue
+    }
+
+
+
+
 
 
 

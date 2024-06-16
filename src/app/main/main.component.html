@@ -3,8 +3,7 @@
   <div class="sectoin-mobile">
     <header class="mobile-header">
       <div class="mobile-header-logo">
-
-        <img src="../../assets/img/usr.jpg"  />
+        <img src="../../assets/img/usr.jpg" />
         <a href="#">User-Name</a>
       </div>
       <div class="mobile-nav-bar">
@@ -12,30 +11,101 @@
           <i class="bi bi-three-dots"></i>
         </div>
         <div class="nav-menu" [class.nav-menu-2]="menuValue">
-            <p class="main-menu">Main Menu</p>
-            <i class="back-icon bi bi-arrow-left" (click)="openMenu()"></i>
+          <p class="main-menu">Main Menu</p>
+          <i class="back-icon bi bi-arrow-left" (click)="openMenu()"></i>
           <ul class="nav-item">
             <li>
-              <a href="#" class="nav-link"><i class="bi bi-person-lines-fill"></i>  profile</a>
+              <a href="#" class="nav-link"
+                ><i class="bi bi-person-lines-fill"></i> profile</a
+              >
             </li>
             <li>
-              <a href="#" class="nav-link"><i class="bi bi-ui-radios"></i>  setting</a>
+              <a href="#" class="nav-link"
+                ><i class="bi bi-ui-radios"></i> setting</a
+              >
             </li>
             <li>
-              <a href="#" class="nav-link"><i class="bi bi-headset"></i>  support</a>
+              <a href="#" class="nav-link"
+                ><i class="bi bi-headset"></i> support</a
+              >
             </li>
             <li>
-              <a href="#" class="nav-link"><i class="bi bi-patch-question"></i> help</a>
+              <a href="#" class="nav-link"
+                ><i class="bi bi-patch-question"></i> help</a
+              >
             </li>
-
-            </ul>
-                <div class="log-out">
-
-                    <a href="#" class="nav-link"><i class="bi bi-box-arrow-left"></i>  log out</a>
-                </div>
+          </ul>
+          <div class="log-out">
+            <a href="#" class="nav-link"
+              ><i class="bi bi-box-arrow-left"></i> log out</a
+            >
+          </div>
         </div>
       </div>
     </header>
+    <div class="mobile-explor">
+      <div class="mobile-expolor-section">
+        <div class="mobile-account-name">
+          <img src="../../assets/img/usr.jpg" alt="user-name" />
+          <a href="#">Account name</a>
+        </div>
+        <div class="mobile-image">
+          <div>
+            <img src="../../assets/img/img (2).jpg" alt="" />
+          </div>
+          <div class="like">
+            <i class="bi bi-three-dots"><a href="#"></a></i>
+
+            <i class="bi bi-heart" style="display: none"><a href="#"></a></i>
+            <i class="bi bi-heart-fill"><a href="#"></a></i>
+          </div>
+          <hr />
+        </div>
+      </div>
+      <div class="mobile-expolor-section">
+        <div class="mobile-account-name">
+          <img src="../../assets/img/usr.jpg" alt="user-name" />
+          <a href="#">Account name</a>
+        </div>
+        <div class="mobile-image">
+          <div>
+            <img src="../../assets/img/img (2).jpg" alt="" />
+          </div>
+          <div class="like">
+            <i class="bi bi-three-dots"><a href="#"></a></i>
+
+            <i class="bi bi-heart" style="display: none"><a href="#"></a></i>
+            <i class="bi bi-heart-fill"><a href="#"></a></i>
+          </div>
+          <hr />
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-add-pic" [class.mobile-add-pic-1]="menuValue">
+        <div class="mobile-add-pic-icon" (click)="addForm()">
+
+            <a href="#">
+            <i class="bi bi-patch-plus-fill"></i>
+          </a>
+        </div>
+
+    </div>
+    <div class="add-pic-form" [class.add-pic-form-1]="addValue">
+        <i class="close-form bi bi-arrow-left-circle-fill" (click)="addForm()"></i>
+
+        <div class="upload-form">
+
+            <input type="file">
+            <button class="upload"><i class="bi bi-box-arrow-in-down"></i></button>
+            <button class="send">Send</button>
+        </div>
+
+    </div>
+    <div>
+        
+    </div>
+
   </div>
 
   <!--------Desktop Version ------------------------------------------>
