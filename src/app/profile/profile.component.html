@@ -1,0 +1,272 @@
+<main>
+  <div class="sectoin-mobile">
+    <header class="mobile-header">
+      <div class="mobile-header-account">
+        <div class="mobile-header-logo">
+          <img src="../../assets/img/usr.jpg" />
+          <div class="mobile-account-dis">
+            <a href="#">User-Name</a>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. .</p>
+          </div>
+        </div>
+        <div class="mobile-account-info">
+          <div class="post-number">
+            <a href=""><span>22</span> posts</a>
+          </div>
+          <div class="followers">
+            <a href=""><span>33</span> followers</a>
+          </div>
+          <div class="following">
+            <a href=""><span>55</span> following</a>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-nav-bar">
+        <div class="menu-icon" (click)="openMenu()">
+          <i class="bi bi-three-dots"></i>
+        </div>
+        <div class="nav-menu" [class.nav-menu-2]="menuValue">
+          <p class="main-menu">Main Menu</p>
+          <i class="back-icon bi bi-arrow-left" (click)="openMenu()"></i>
+          <ul class="nav-item">
+            <li>
+              <a href="#" class="nav-link"
+                ><i class="bi bi-person-lines-fill"></i> profile</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-link"
+                ><i class="bi bi-ui-radios"></i> setting</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-link"
+                ><i class="bi bi-headset"></i> support</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-link"
+                ><i class="bi bi-patch-question"></i> help</a
+              >
+            </li>
+          </ul>
+          <div class="log-out">
+            <a href="#" class="nav-link"
+              ><i class="bi bi-box-arrow-left"></i> log out</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="mobile-explor">
+      <div class="mobile-expolor-section">
+        <div class="mobile-account-name">
+          <img src="../../assets/img/usr.jpg" alt="user-name" />
+          <a href="#">Account name</a>
+        </div>
+        <div class="mobile-image">
+          <div>
+            <img src="../../assets/img/img (2).jpg" alt="" />
+          </div>
+          <div class="like">
+            <i class="bi bi-three-dots"><a href="#"></a></i>
+
+            <i class="bi bi-heart" style="display: none"><a href="#"></a></i>
+            <i class="bi bi-heart-fill"><a href="#"></a></i>
+          </div>
+          <hr />
+        </div>
+      </div>
+      <div class="mobile-expolor-section">
+        <div class="mobile-account-name">
+          <img src="../../assets/img/usr.jpg" alt="user-name" />
+          <a href="#">Account name</a>
+        </div>
+        <div class="mobile-image">
+          <div>
+            <img src="../../assets/img/img (2).jpg" alt="" />
+          </div>
+          <div class="like">
+            <i class="bi bi-three-dots"><a href="#"></a></i>
+
+            <i class="bi bi-heart" style="display: none"><a href="#"></a></i>
+            <i class="bi bi-heart-fill"><a href="#"></a></i>
+          </div>
+          <hr />
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-add-pic" [class.mobile-add-pic-1]="menuValue">
+      <div class="mobile-add-pic-icon" (click)="addForm()">
+        <a href="#">
+          <i class="bi bi-patch-plus-fill"></i>
+        </a>
+      </div>
+    </div>
+    <div class="add-pic-form" [class.add-pic-form-1]="addValue">
+      <i
+        class="close-form bi bi-arrow-left-circle-fill"
+        (click)="addForm()"
+      ></i>
+
+      <div class="upload-form">
+        <input type="file" />
+        <button class="upload"><i class="bi bi-box-arrow-in-down"></i></button>
+        <button class="send">Send</button>
+      </div>
+    </div>
+    <div></div>
+  </div>
+
+  <!--------Desktop Version ------------------------------------------>
+  <section class="desktop-section">
+    <header class="desktop-header">
+      <div class="account-dis">
+        <h2>account name</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia,
+          laborum quis quos natus!
+        </p>
+      </div>
+      <div class="account-info">
+        <div class="post-number">
+          <a href=""><span>22</span> posts</a>
+        </div>
+        <div class="followers">
+          <a href=""><span>33</span> followers</a>
+        </div>
+        <div class="following">
+          <a href=""><span>55</span> following</a>
+        </div>
+      </div>
+    </header>
+    <div class="section">
+      <div class="left-side">
+        <div class="acconut-img">
+          <img src="../../assets/img/usr.jpg" alt="" />
+        </div>
+
+        <div class="side-bar">
+          <ul class="side-list">
+            <li class="side-item">
+              <i class="bi bi-person-lines-fill"></i> profile
+            </li>
+            <li class="side-item"><i class="bi bi-ui-radios"></i> setting</li>
+            <li class="side-item"><i class="bi bi-patch-question"></i> help</li>
+            <li class="side-item">
+              <i class="bi bi-box-arrow-left"></i> Log Out
+            </li>
+          </ul>
+          <a href="#"><i class="bi bi-headset"></i> Support</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="explor">
+          <div class="image">
+            <div>
+              <img src="../../assets/img/img (2).jpg" alt="" />
+            </div>
+            <div class="like">
+              <i class="bi bi-three-dots"><a href="#"></a></i>
+
+              <i class="bi bi-heart" style="display: none"><a href="#"></a></i>
+              <i class="bi bi-heart-fill"><a href="#"></a></i>
+            </div>
+            <hr />
+          </div>
+        </div>
+        <div class="explor">
+          <div class="image">
+            <div>
+              <img src="../../assets/img/img (2).jpg" alt="" />
+            </div>
+            <div class="like">
+              <i class="bi bi-three-dots"><a href="#"></a></i>
+
+              <i class="bi bi-heart" style="display: none"><a href="#"></a></i>
+              <i class="bi bi-heart-fill"><a href="#"></a></i>
+            </div>
+            <hr />
+          </div>
+        </div>
+        <div class="explor">
+          <div class="image">
+            <div>
+              <img src="../../assets/img/img (2).jpg" alt="" />
+            </div>
+            <div class="like">
+              <i class="bi bi-three-dots"><a href="#"></a></i>
+
+              <i class="bi bi-heart" style="display: none"><a href="#"></a></i>
+              <i class="bi bi-heart-fill"><a href="#"></a></i>
+            </div>
+            <hr />
+          </div>
+        </div>
+        <div class="explor">
+          <div class="image">
+            <div>
+              <img src="../../assets/img/img (2).jpg" alt="" />
+            </div>
+            <div class="like">
+              <i class="bi bi-three-dots"><a href="#"></a></i>
+
+              <i class="bi bi-heart" style="display: none"><a href="#"></a></i>
+              <i class="bi bi-heart-fill"><a href="#"></a></i>
+            </div>
+            <hr />
+          </div>
+        </div>
+        <div class="explor">
+          <div class="image">
+            <div>
+              <img src="../../assets/img/img (2).jpg" alt="" />
+            </div>
+            <div class="like">
+              <i class="bi bi-three-dots"><a href="#"></a></i>
+
+              <i class="bi bi-heart" style="display: none"><a href="#"></a></i>
+              <i class="bi bi-heart-fill"><a href="#"></a></i>
+            </div>
+            <hr />
+          </div>
+        </div>
+        <div class="explor">
+          <div class="image">
+            <div>
+              <img src="../../assets/img/img (2).jpg" alt="" />
+            </div>
+            <div class="like">
+              <i class="bi bi-three-dots"><a href="#"></a></i>
+
+              <i class="bi bi-heart" style="display: none"><a href="#"></a></i>
+              <i class="bi bi-heart-fill"><a href="#"></a></i>
+            </div>
+            <hr />
+          </div>
+        </div>
+      </div>
+      <div class="add-pic" [class.add-pic-1]="menuValue">
+        <a href="#">
+          <i class="bi bi-patch-plus-fill" (click)="addForm()"></i>
+        </a>
+      </div>
+      <div class="add-pic-form" [class.add-pic-form-1]="addValue">
+        <i
+          class="close-form bi bi-arrow-left-circle-fill"
+          (click)="addForm()"
+        ></i>
+
+        <div class="upload-form">
+          <input type="file" />
+          <button class="upload">
+            <i class="bi bi-box-arrow-in-down"></i>
+          </button>
+          <button class="send">Send</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

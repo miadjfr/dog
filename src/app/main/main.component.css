@@ -68,14 +68,19 @@ i {
 }
 
 /* ======== Right-section ==========*/
+
+
 .right-side {
   padding-top: 60px;
   background-color: #f8d9e893;
   height: 100%;
+
+
 }
 
 .explor {
   padding-left: 60px;
+
 }
 .account-name {
   position: relative;
